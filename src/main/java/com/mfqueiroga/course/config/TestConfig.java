@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Profile;
 
 import com.mfqueiroga.course.entities.Order;
 import com.mfqueiroga.course.entities.User;
+import com.mfqueiroga.course.entities.enums.OrderStatus;
 import com.mfqueiroga.course.repositories.OrderRepository;
 import com.mfqueiroga.course.repositories.UserRepository;
 
@@ -31,9 +32,9 @@ public class TestConfig implements CommandLineRunner{
 	
 		userRepository.saveAll(Arrays.asList(u1,u2));
 		
-		Order o1 = new Order(null, Instant.parse("2024-08-14T19:53:08Z"), u1);
-		Order o2 = new Order(null, Instant.parse("2024-07-14T09:53:08Z"), u2);
-		Order o3 = new Order(null, Instant.parse("2024-02-10T13:23:08Z"), u1);
+		Order o1 = new Order(null, Instant.parse("2024-08-14T19:53:08Z"), OrderStatus.PAID, u1);
+		Order o2 = new Order(null, Instant.parse("2024-07-14T09:53:08Z"), OrderStatus.WAITING_PAYMENT, u2);
+		Order o3 = new Order(null, Instant.parse("2024-02-10T13:23:08Z"), OrderStatus.WAITING_PAYMENT, u1);
 		
 		orderRepository.saveAll(Arrays.asList(o1,o2,o3));
 	}
