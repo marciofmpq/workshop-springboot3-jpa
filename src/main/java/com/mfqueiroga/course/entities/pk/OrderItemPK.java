@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Objects;
 
 import com.mfqueiroga.course.entities.Order;
-import com.mfqueiroga.course.entities.enums.Product;
+import com.mfqueiroga.course.entities.Product;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;

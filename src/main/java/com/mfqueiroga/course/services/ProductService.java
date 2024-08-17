@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.mfqueiroga.course.entities.enums.Product;
+import com.mfqueiroga.course.entities.Product;
 import com.mfqueiroga.course.repositories.ProductRepository;
 
 @Service

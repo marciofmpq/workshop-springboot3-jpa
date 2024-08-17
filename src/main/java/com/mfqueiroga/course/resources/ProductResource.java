@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mfqueiroga.course.entities.enums.Product;
+import com.mfqueiroga.course.entities.Product;
 import com.mfqueiroga.course.services.ProductService;
 
 @RestController

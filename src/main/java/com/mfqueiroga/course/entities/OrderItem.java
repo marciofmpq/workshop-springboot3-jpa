@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.mfqueiroga.course.entities.enums.Product;
 import com.mfqueiroga.course.entities.pk.OrderItemPK;
 
 import jakarta.persistence.EmbeddedId;
